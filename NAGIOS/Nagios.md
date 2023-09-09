@@ -6,24 +6,22 @@ In case of any failure, Nagios alerts about the issues, so that the technical te
 Otherwise, application or server may be down.
 
 <u><h1 style="text-align:center">Advantages of Nagios </h1></u>
-
 - Detect all types of network or server issue.
 - It helps you to find the root cause of the problem which allow you to get permanent solution to the problem.
 - Reduce downtime.
 - Active monitoring of entire infrastructure.
 - Allow you to monitor & troubleshoot server performanance issues.
 - Automatically fix problem.
-   
-   <u><h1 style="text-align:center">How does it works </h1></u>
-
- - Mention all details in configuration file.
- - Daemon read those details what data to be collected.
+  
+ <u><h1 style="text-align:center">How does it works </h1></u>
+- Mention all details in configuration file.
+- Daemon read those details what data to be collected.
 - Daemon use **NRPE** (Nagios Remote Plugin Executor) plugin to collect data from nodes & store in its own database.
 - Finally, shows in dashboard.
   
-  <u><h1 style="text-align:center">Installation of Nagios in Ubuntu 20.04 </h1></u>
+<u><h1 style="text-align:center">Installation of Nagios in Ubuntu 20.04 </h1></u>
 
-  <u><h2 >Environment details </h2></u>
+ <u><h2 >Environment details </h2></u>
 **OS**- Ubuntu 20.04</br>
 **CPU**- 8 Core</br>
 **STORAGE**- 1 TB</br>
@@ -64,7 +62,7 @@ This command will start the Nagios container with the specified options. You can
  ![Alt text](run-fotor-2023090963145-fotor-2023090911117.png)
 
  ### Command 5 :-
- Check running container details by this command.
+Check running container details by this command.
  ```
 podman ps
 ```
@@ -104,7 +102,7 @@ vim cgi.cfg
 Go to the cgi.cfg file and add your username.
 ![Alt text](<Screenshot from 2023-09-09 11-53-29-fotor-20230909115510-fotor-2023090912821.png>)
 
-
+### Final output
 
  Type **localhost:8095** on web page and then you can see preview on web interface.</br>
 
