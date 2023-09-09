@@ -24,9 +24,10 @@ Otherwise, application or server may be down.
   <u><h1 style="text-align:center">Installation of Nagios in Ubuntu 20.04 </h1></u>
 
   <u><h2 >Environment details </h2></u>
-**OS**- Ubuntu 20.04
-**CPU**- 8 Core
-**STORAGE**- 1 TB
+**OS**- Ubuntu 20.04</br>
+**CPU**- 8 Core</br>
+**STORAGE**- 1 TB</br>
+
 <u><h2 >Tool used </h2></u>
 
 - podman version (3.4.2)
@@ -74,13 +75,16 @@ This command is used for going into the container and execute commands.
 ```
 podman exec -it nagios bash
 ```
+
 ![Alt text](<Screenshot from 2023-09-09 11-03-36-fotor-202309091163.png>)
 
 ### Command 7:-
-This command is used for  
+This command is used for  go into the directory.
+
 ```
 cd /opt/nagios/etc
 ```
+
 ![Alt text](<Screenshot from 2023-09-09 11-08-52-fotor-20230909111153.png>)
 
 ### Command 8:-
@@ -92,20 +96,23 @@ ls
 
 ### Command 9:-
 This command is used  for editing in file.
+
 ```
 vim cgi.cfg
 ```
+
 Go to the cgi.cfg file and add your username.
 ![Alt text](<Screenshot from 2023-09-09 11-53-29-fotor-20230909115510-fotor-2023090912821.png>)
 
 
 
- Type **localhost:8095** on web page and then you can see preview on web interface.
+ Type **localhost:8095** on web page and then you can see preview on web interface.</br>
+
 ![Alt text](<Screenshot from 2023-09-08 11-34-20.png>) 
 
 **checking services**
- we have to go on left side and click on the service option.
- This is the dashboard of all services.
+ we have to go on left side and click on the service option.</br>
+ This is the dashboard of all services.</br>
 
 
 
