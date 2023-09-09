@@ -98,8 +98,7 @@ This command is used  for editing in file.
 ```
 vim cgi.cfg
 ```
-
-Go to the cgi.cfg file and add your username.
+Go to the cgi.cfg file and add your username.</br>
 ![Alt text](<Screenshot from 2023-09-09 11-53-29-fotor-20230909115510-fotor-2023090912821.png>)
 
 ### Final output
