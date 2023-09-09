@@ -107,7 +107,7 @@ Go to the cgi.cfg file and add your username.</br>
 
 ![Alt text](<Screenshot from 2023-09-08 11-34-20.png>) 
 
-**checking services**
+**checking services**</br>
  we have to go on left side and click on the service option.</br>
  This is the dashboard of all services.</br>
 
