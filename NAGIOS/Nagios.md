@@ -48,7 +48,7 @@ podman search nagios
 ![Alt text](image-fotor-20230909690.png)
 **Podman:** It is the name of the containerization tool.</br>
 **Search:** It is a subcommand in a podman tool, it indicates that you want to search for container image images in container registry.</br>
-**Nagios:** It is search term or query,here I am  looking for container images related to the Nagios monitoring tool.</br>
+**nagios:** It is search term or query,here I am  looking for container images related to the Nagios monitoring tool.</br>
 
 ##### Command 3:-
 This comand is used to pull the nagios container image from docker hub to your local system using podman.
@@ -56,8 +56,8 @@ This comand is used to pull the nagios container image from docker hub to your l
 podman pull docker.io/jasonrivers/nagios  
 ```
 ![Alt text](<Screenshot from 2023-09-04 20-07-24-fotor-2023090962043.png>)
-**podman pull:** It tells your computer to download something.
-**docker.io:** It's the location on the internet where we want to get something.
+**podman pull:** It tells your computer to download something.</br>
+**docker.io:** It's the location on the internet where we want to get something.</br>
 **jasonrivers/nagios:** This specifies exactly what we want to download, in this case, it's a tool or application called "nagios."
 
 
@@ -100,6 +100,7 @@ This command is used for going into the container and execute commands.
 podman exec -it nagios bash
 ```
 ![Alt text](<Screenshot from 2023-09-09 11-03-36-fotor-202309091163.png>)
+
 **podman exec:** Exec is the sub command of podman used for executing a command inside a running container.</br>
 **-it:** It allows you to run interactive commands inside containers while maintaining a terminal-like environment for a smooth interactive experience.</br>
 **nagios:** This is the name of the container where you want to execute the command. It specifies which container to enter.</br>
@@ -112,9 +113,9 @@ By this command, I am telling my computer to change my current working directory
 ```
 cd /opt/nagios/etc
 ```
-**cd:** This is a command that stands for "change directory." It is used to navigate or move to a different directory (folder) in the file system.
+**cd:** This is a command that stands for "change directory." It is used to navigate or move to a different directory (folder) in the file system.</br>
 
-**/opt/nagios/etc:** This is the path or location you want to change your current directory to. In this case, you are specifying the directory /opt/nagios/etc as the target directory.
+**/opt/nagios/etc:** This is the path or location you want to change your current directory to. In this case, you are specifying the directory /opt/nagios/etc as the target directory.</br>
 
 ![Alt text](<Screenshot from 2023-09-09 11-08-52-fotor-20230909111153.png>)
 
