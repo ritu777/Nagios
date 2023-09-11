@@ -56,6 +56,7 @@ This comand is used to pull the nagios container image from docker hub to your l
 podman pull docker.io/jasonrivers/nagios  
 ```
 ![Alt text](<Screenshot from 2023-09-04 20-07-24-fotor-2023090962043.png>)
+
 **podman pull:** It tells your computer to download something.</br>
 **docker.io:** It's the location on the internet where we want to get something.</br>
 **jasonrivers/nagios:** This specifies exactly what we want to download, in this case, it's a tool or application called "nagios."
@@ -70,6 +71,7 @@ In this command I added my username and password also otherwise nagios will give
  podman run -d --name nagios -p 8095:80 --cap-add=NET_RAW -e NAGIOSADMIN_USER=reetu -e NAGIOSADMIN_PASSWORD=nagios docker.io/jasonrivers/nagios
  ```
 ![Alt text](run-fotor-2023090963145-fotor-2023090911117.png)
+
 **podman run:** It tells your computer to start running something in a container.
 
 **-d:** It stands for "detached mode." This means that the container will run in the background, and you'll get your command prompt back.
@@ -91,6 +93,7 @@ In this command I added my username and password also otherwise nagios will give
 podman ps
 ```
 ![Alt text](<podman ps-fotor-20230909105549.png>)
+
 **podman:** This is the command-line tool for managing containers.</br>
 **ps:** This is a subcommand of podman that stands for "processes" or "list containers."
 
@@ -113,11 +116,12 @@ By this command, I am telling my computer to change my current working directory
 ```
 cd /opt/nagios/etc
 ```
+
+![Alt text](<Screenshot from 2023-09-09 11-08-52-fotor-20230909111153.png>)
+
 **cd:** This is a command that stands for "change directory." It is used to navigate or move to a different directory (folder) in the file system.</br>
 
 **/opt/nagios/etc:** This is the path or location you want to change your current directory to. In this case, you are specifying the directory /opt/nagios/etc as the target directory.</br>
-
-![Alt text](<Screenshot from 2023-09-09 11-08-52-fotor-20230909111153.png>)
 
 ##### Command 8:-
 ```
