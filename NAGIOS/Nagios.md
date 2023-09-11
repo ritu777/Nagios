@@ -141,6 +141,7 @@ vim cgi.cfg
 Go to the cgi.cfg file and add your username which you have mentioned in run command.</BR>
 ![Alt text](<Screenshot from 2023-09-09 11-53-29-fotor-20230909115510-fotor-2023090912821.png>)
 
+**vim:**
 
 
 Type **localhost:8095** on web page and then you can see preview on web interface.</br>
