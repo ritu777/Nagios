@@ -2,7 +2,7 @@
   
 <u><h1 style="text-align:center">Installation of Nagios in Ubuntu 20.04 </h1></u>
 
-##<u>Task requirement</u></br>
+<u><h2>Task requirement</u></h2></br>
 
 To track the status and performance of their IT infrastructure. It provides a centralized platform for monitoring hosts, services, and network devices, 
 
@@ -24,8 +24,11 @@ This command is used for installation of podman.
 apt install -y podman
 ```
 **apt:** apt stands for "Advanced Package Tool. It is used to install, update, and manage software packages on the system.</br>
-**install:** This is the sub-command that tells apt to install a package. When you use apt install, you're instructing the package manager to download and install the specified software.<>/br
-**-y:** This is an option flag that stands for "yes." It's used to automatically answer "yes" to any prompts that may come up during the installation process.</br>                                                                                                                                           
+
+**install:** This is the sub-command that tells apt to install a package. When you use apt install, you're instructing the package manager to download and install the specified software.</br>
+
+**-y:** This is an option flag that stands for "yes." It's used to automatically answer "yes" to any prompts that may come up during the installation process.</br>        
+
 **podman:** This is the name of the package or software you want to install.
 
 ##### Command 2:-
