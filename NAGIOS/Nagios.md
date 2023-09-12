@@ -2,7 +2,8 @@
   
 <u><h1 style="text-align:center">Installation of Nagios in Ubuntu 20.04 </h1></u>
 
-##<u>Task requirement</u>
+##<u>Task requirement</u></br>
+
 To track the status and performance of their IT infrastructure. It provides a centralized platform for monitoring hosts, services, and network devices, 
 
 <u><h2 >Environment details </h2></u>
@@ -22,10 +23,9 @@ This command is used for installation of podman.
 ```
 apt install -y podman
 ```
-**apt:** apt stands for "Advanced Package Tool. It is used to install, update, and manage software packages on the system.
-
-**install:** This is the sub-command that tells apt to install a package. When you use apt install, you're instructing the package manager to download and install the specified software.
-**-y:** This is an option flag that stands for "yes." It's used to automatically answer "yes" to any prompts that may come up during the installation process.
+**apt:** apt stands for "Advanced Package Tool. It is used to install, update, and manage software packages on the system.</br>
+**install:** This is the sub-command that tells apt to install a package. When you use apt install, you're instructing the package manager to download and install the specified software.<>/br
+**-y:** This is an option flag that stands for "yes." It's used to automatically answer "yes" to any prompts that may come up during the installation process.</br>                                                                                                                                           
 **podman:** This is the name of the package or software you want to install.
 
 ##### Command 2:-
@@ -45,9 +45,9 @@ This comand is used to pull the nagios container image from docker hub to your l
 podman pull docker.io/jasonrivers/nagios  
 ```
 ![Alt text](<Screenshot from 2023-09-04 20-07-24-fotor-2023090962043.png>)
-**podman pull:** It tells your computer to download something.
-**docker.io:** It's the location on the internet where we want to get something.
-**jasonrivers/nagios:** This specifies exactly what we want to download, in this case, it's a tool or application called "nagios."
+**podman pull:** It tells your computer to download something.</br>
+**docker.io:** It's the location on the internet where we want to get something.</br>
+**jasonrivers/nagios:** This specifies exactly what we want to download, in this case, it's a tool or application called "nagios."</br>
 
 
 
@@ -59,20 +59,20 @@ In this command I added my username and password also otherwise nagios will give
  podman run -d --name nagios -p 8095:80 --cap-add=NET_RAW -e NAGIOSADMIN_USER=reetu -e NAGIOSADMIN_PASSWORD=nagios docker.io/jasonrivers/nagios
  ```
 ![Alt text](run-fotor-2023090963145-fotor-2023090911117.png)
-**podman run:** It tells your computer to start running something in a container.
+**podman run:** It tells your computer to start running something in a container.</br>
 
-**-d:** It stands for "detached mode." This means that the container will run in the background, and you'll get your command prompt back.
+**-d:** It stands for "detached mode." This means that the container will run in the background, and you'll get your command prompt back.</br>
 
-**--name nagios:** This gives your container a name, in this case, "nagios." It's like giving it a label so you can refer to it easily.
+**--name nagios:** This gives your container a name, in this case, "nagios." It's like giving it a label so you can refer to it easily.</br>
 
-**-p 8095:80:** This maps port 8095 on your computer to port 80 in the container. So, when you access port 8095 on your computer, it's like talking to port 80 in the container.
+**-p 8095:80:** This maps port 8095 on your computer to port 80 in the container. So, when you access port 8095 on your computer, it's like talking to port 80 in the container.</br>
 
 **--cap-add=NET_RAW:** This adds the capability to send and receive raw network packets. It's needed for certain network-related tasks.
-**-e NAGIOSADMIN_USER=reetu:** This sets an environment variable NAGIOSADMIN_USER inside the container to "reetu." It's like giving a piece of information to the container.
+**-e NAGIOSADMIN_USER=reetu:** This sets an environment variable NAGIOSADMIN_USER inside the container to "reetu." It's like giving a piece of information to the container.</br>
 
-**-e NAGIOSADMIN_PASSWORD=nagios:** This sets another environment variable NAGIOSADMIN_PASSWORD inside the container to "nagios." It's like giving another piece of information to the container.
+**-e NAGIOSADMIN_PASSWORD=nagios:** This sets another environment variable NAGIOSADMIN_PASSWORD inside the container to "nagios." It's like giving another piece of information to the container.</br>
 
-**docker.io/jasonrivers/nagios:** This is the name of the container image you want to run. It's like specifying which application or tool you want to use in the container.
+**docker.io/jasonrivers/nagios:** This is the name of the container image you want to run. It's like specifying which application or tool you want to use in the container.</br>
 
 ##### Command 5 :-
  Check running container details by this command.
@@ -81,7 +81,7 @@ podman ps
 ```
 ![Alt text](<podman ps-fotor-20230909105549.png>)
 **podman:** This is the command-line tool for managing containers.</br>
-**ps:** This is a subcommand of podman that stands for "processes" or "list containers."
+**ps:** This is a subcommand of podman that stands for "processes" or "list containers."</br>
 
 ##### Command 6:-
 This command is used for going into the container and execute commands.
