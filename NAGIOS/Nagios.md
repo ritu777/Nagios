@@ -18,6 +18,12 @@ This command is used for installation of podman.
 ```
 apt install -y podman
 ```
+**apt:** apt stands for "Advanced Package Tool. It is used to install, update, and manage software packages on the system.
+
+**install:** This is the sub-command that tells apt to install a package. When you use apt install, you're instructing the package manager to download and install the specified software.
+**-y:** This is an option flag that stands for "yes." It's used to automatically answer "yes" to any prompts that may come up during the installation process.
+**podman:** This is the name of the package or software you want to install.
+
 ##### Command 2:-
 This command will query the default container registry (usually Docker Hub) and return a list of container images with "nagios" in their name or description.
 ```
@@ -119,7 +125,8 @@ vim cgi.cfg
 Go to the cgi.cfg file and add your username which you have mentioned in run command.</BR>
 ![Alt text](<Screenshot from 2023-09-09 11-53-29-fotor-20230909115510-fotor-2023090912821.png>)
 
-**vim:**
+**vim:** This is the name of a text editor program.
+**cgi.cfg:**  This appears to be a filename or file path.
 
 
 Type **localhost:8095** on web page and then you can see preview on web interface.</br>
