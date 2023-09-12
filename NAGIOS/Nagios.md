@@ -1,26 +1,4 @@
-<u><h1 style="text-align:center"> NAGIOS</h1></u>
-Nagios is an open source continuous monitoring tool which monitors network, applications and servers. It gives the complete status of your IT infrastructure and its performance.
 
-In case of any failure, Nagios alerts about the issues, so that the technical team can perform recovery process immediately.
-
-Otherwise, application or server may be down.
-
-<u><h3
-style="text-align:center">Advantages of Nagios </h3></u>
-
-- Detect all types of network or server issue.
-- It helps you to find the root cause of the problem which allow you to get permanent solution to the problem.
-- Reduce downtime.
-- Active monitoring of entire infrastructure.
-- Allow you to monitor & troubleshoot server performanance issues.
-- Automatically fix problem.
-   
-<u><h3 style="text-align:center">How does it works </h3></u>
-
-- Mention all details in configuration file. - Daemon read those details what data to be collected.
-- Daemon use **NRPE** (Nagios Remote Plugin Executor) plugin to collect data from nodes & store in its own database.
-- Finally, shows in dashboard.
-  
 <u><h1 style="text-align:center">Installation of Nagios in Ubuntu 20.04 </h1></u>
 
 <u><h2 >Environment details </h2></u>
