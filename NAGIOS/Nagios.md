@@ -39,7 +39,9 @@ podman search nagios
 ![Alt text](image-fotor-20230909690.png)
 
 **podman:** It is the name of the containerization tool.</br>
+
 **search:** It is a subcommand in a podman tool, it indicates that you want to search for container image images in container registry.</br>
+
 **nagios:** It is search term or query, here I am  looking for container images related to the Nagios monitoring tool.</br>
 
 ##### Command 3:-
@@ -50,7 +52,9 @@ podman pull docker.io/jasonrivers/nagios
 ![Alt text](<Screenshot from 2023-09-04 20-07-24-fotor-2023090962043.png>)
 
 **podman pull:** It tells your computer to download something.</br>
+
 **docker.io:** It's the location on the internet where we want to get something.</br>
+
 **jasonrivers/nagios:** This specifies exactly what we want to download, in this case, it's a tool or application called "nagios."</br>
 
 
@@ -86,6 +90,7 @@ podman ps
 ```
 ![Alt text](<podman ps-fotor-20230909105549.png>)
 **podman:** This is the command-line tool for managing containers.</br>
+
 **ps:** This is a subcommand of podman that stands for "processes" or "list containers."</br>
 
 ##### Command 6:-
@@ -96,7 +101,9 @@ podman exec -it nagios bash
 ![Alt text](<Screenshot from 2023-09-09 11-03-36-fotor-202309091163.png>)
 
 **podman exec:** Exec is the sub command of podman used for executing a command inside a running container.</br>
+
 **-it:** It allows you to run interactive commands inside containers while maintaining a terminal-like environment for a smooth interactive experience.</br>
+
 **nagios:** This is the name of the container where you want to execute the command. It specifies which container to enter.</br>
 
 **bash:** This is the command you want to run inside the container. In this case, you are starting a Bash shell inside the container. Bash is a command-line shell that allows you to interact with the container's file system and execute commands within it.
