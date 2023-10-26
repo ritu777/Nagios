@@ -21,7 +21,7 @@ To track the status and performance of their IT infrastructure. It provides a ce
 ##### Command 1:-
 This command is used for installation of podman.
 ```
-apt install -y podman
+sudo apt install -y podman
 ```
 **apt:** apt stands for "Advanced Package Tool. It is used to install, update, and manage software packages on the system.</br>
 
@@ -126,7 +126,14 @@ cd /opt/nagios/etc
 ls
 ```
 ![Alt text](<Screenshot from 2023-09-09 11-13-39-fotor-20230909113319.png>)
-
+##### Command 9:  
+This command is used inside the container to use all commands.
+```apt-get update && apt-get upgrade
+```
+Then install vim command by using:
+```
+apt install vim
+```
 
 ##### Command 9:-
 This command is used  for editing in file.
