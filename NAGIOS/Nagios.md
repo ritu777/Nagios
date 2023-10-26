@@ -128,7 +128,8 @@ ls
 ![Alt text](<Screenshot from 2023-09-09 11-13-39-fotor-20230909113319.png>)
 ##### Command 9:  
 This command is used inside the container to use all commands.
-```apt-get update && apt-get upgrade
+```
+apt-get update && apt-get upgrade
 ```
 Then install vim command by using:
 ```
