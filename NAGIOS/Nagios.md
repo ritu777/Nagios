@@ -11,7 +11,7 @@ Nagios is set up to monitor and track the health, performance, and availability 
 **CPU**- 8 Core (optional)</br>
   -   For small to medium-sized setups monitoring a few dozen hosts and services, a single-core CPU should be sufficient.
 
- -    Larger environments with hundreds or thousands of hosts and services may benefit from a multi-core CPU, such as a dual-core or quad-core processor.
+ -    Larger environments with hundreds or thousands of hosts and services may benefit from a multi-core CPU, such as a dual-core or quad-core processor.</br>
 **Storage**- 1 TB (optional)</br>
 **Memory**-  409Mib </br>
  -    For a small to medium-sized setup monitoring a few dozen hosts and services, a minimum of 1 GB to 2 GB of RAM is often sufficient.
