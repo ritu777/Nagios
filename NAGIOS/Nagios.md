@@ -146,6 +146,7 @@ cd /opt/nagios/etc
 ![Alt text](<Screenshot from 2023-09-09 11-08-52-fotor-20230909111153.png>)
 
 ##### Command :-
+ It is used to list files and directories in a directory. It is one of the most commonly used commands in the command-line interface (CLI). 
 ```
 ls
 ```
