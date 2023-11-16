@@ -8,8 +8,8 @@ Nagios is set up to monitor and track the health, performance, and availability 
 
 <u><h2 >Environment details </h2></u>
 **OS**- Ubuntu 20.04 64-bit</br>
-**CPU**- 8 Core</br> (optional)
-**Storage**- 1 TB</br> (optional)
+**CPU**- 8 Core</br> (optional)</br>
+**Storage**- 1 TB (optional)</br>
 **Memory**-  409Mib </br>
  -    For a small to medium-sized setup monitoring a few dozen hosts and services, a minimum of 1 GB to 2 GB of RAM is often sufficient.
 
