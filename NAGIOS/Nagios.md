@@ -23,7 +23,7 @@ Nagios is set up to monitor and track the health, performance, and availability 
 
 - Podman version 3.4.2 (This is optional otherwise,you can apply on base as well. )
   
-<u><h3 >Here are some steps for installing nagios on container: </h3></u>
+<u><h3 >Firstly, install podman by following these commands: </h3></u>
 
 First, use the source /etc/os-release command to get the OS release, as shown below</br>
 ```
@@ -54,7 +54,7 @@ sudo apt install -y podman
 
 **podman:** This is the name of the software package you want to install.
 
-##### Command 2:-
+##### Command :-
 This command will query the default container registry (usually Docker Hub) and return a list of container images with "nagios" in their name or description.
 ```
 podman search nagios
@@ -67,7 +67,7 @@ podman search nagios
 
 **nagios:** It is search term or query, here I am  looking for container images related to the Nagios monitoring tool.</br>
 
-##### Command 3:-
+##### Command :-
 This comand is used to pull the nagios container image from docker hub to your local system using podman.
 ```
 podman pull docker.io/jasonrivers/nagios  
@@ -82,7 +82,7 @@ podman pull docker.io/jasonrivers/nagios
 
 
 
-##### Command 4:- 
+##### Command :- 
 This command will start the Nagios container with the specified options. You can access the Nagios web interface by opening a web browser and navigating to http://localhost:8095/nagios.</br> 
 In this command I added my username and password also otherwise nagios will give you default username and password.
 
@@ -107,7 +107,7 @@ In this command I added my username and password also otherwise nagios will give
 
 **docker.io/jasonrivers/nagios:** This is the name of the container image you want to run. It's like specifying which application or tool you want to use in the container.</br>
 
-##### Command 5 :-
+##### Command  :-
  Check running container details by this command.
  ```
 podman ps
@@ -117,7 +117,8 @@ podman ps
 
 **ps:** This is a subcommand of podman that stands for "processes" or "list containers."</br>
 
-##### Command 6:-
+**If you have not given your username then u don't have need to follow below steps:**
+##### Command :-
 This command is used for going into the container and execute commands.
 ```
 podman exec -it nagios bash
@@ -132,7 +133,7 @@ podman exec -it nagios bash
 
 **bash:** This is the command you want to run inside the container. In this case, you are starting a Bash shell inside the container. Bash is a command-line shell that allows you to interact with the container's file system and execute commands within it.
 
-##### Command 7:-
+##### Command :-
 By this command, I am telling my computer to change my current working directory to the /opt/nagios/etc directory.
 
 ```
@@ -144,7 +145,7 @@ cd /opt/nagios/etc
 
 ![Alt text](<Screenshot from 2023-09-09 11-08-52-fotor-20230909111153.png>)
 
-##### Command 8:-
+##### Command :-
 ```
 ls
 ```
