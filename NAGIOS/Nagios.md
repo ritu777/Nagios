@@ -4,32 +4,51 @@
 
 <u><h2>Task requirement</h2></u></br>
 
-To track the status and performance of their IT infrastructure. It provides a centralized platform for monitoring hosts, services, and network devices, 
+Nagios is set up to monitor and track the health, performance, and availability of IT systems. It helps detect issues early, preventing downtime, and provides a centralized platform for efficient management and customization of alerts.
 
 <u><h2 >Environment details </h2></u>
-**Os**- Ubuntu 20.04</br>
-**Cpu**- 8 Core</br>
-**Storage**- 1 TB</br>
+**OS**- Ubuntu 20.04 64-bit</br>
+**CPU**- 8 Core</br> (optional)
+**Storage**- 1 TB</br> (optional)
+**Memory**-  409Mib </br>
+ -    For a small to medium-sized setup monitoring a few dozen hosts and services, a minimum of 1 GB to 2 GB of RAM is often sufficient.
 
-<u><h2 >Tool used </h2></u>
+ -   Larger environments with hundreds or thousands of hosts and services may require more RAM, ranging from 4 GB to 8 GB or more.
 
-- podman version (3.4.2)
-- Nagios version (4.4.8)
+<u><h2 >Prerequisites tool </h2></u>
+
+- Podman version 3.4.2 (This is optional otherwise,you can apply on base as well. )
   
-<u><h3 >Here are some steps for installing nagios in container: </h3></u>
+<u><h3 >Here are some steps for installing nagios on container: </h3></u>
 
-##### Command 1:-
-This command is used for installation of podman.
+First, use the source /etc/os-release command to get the OS release, as shown below</br>
+```
+source /etc/os-release
+```
+Since podman is not in the default Ubuntu 20.04 repository, we need to add the Kubic repository to be able to download the podman package. Then it can be installed using one of the package managers in Ubuntu, such as apt or apt-get. To add the repository, use the below command.
+```
+echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
+```
+Then, use the command below to download and add the GPG key. This is needed to make sure the downloaded package is good.
+```
+curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key" | sudo apt-key add -
+```
+After that update your system by this command.
+```
+sudo apt update
+```
+Now you can install podman by following command.
+
 ```
 sudo apt install -y podman
 ```
-**apt:** apt stands for "Advanced Package Tool. It is used to install, update, and manage software packages on the system.</br>
+**apt:** apt stands for "Advanced Package Tool. It is used to install, update, and manage software packages on ubuntu operating system.</br>
 
 **install:** This is the sub-command that tells apt to install a package. When you use apt install, you're instructing the package manager to download and install the specified software.</br>
 
 **-y:** This is an option flag that stands for "yes." It's used to automatically answer "yes" to any prompts that may come up during the installation process.</br>        
 
-**podman:** This is the name of the package or software you want to install.
+**podman:** This is the name of the software package you want to install.
 
 ##### Command 2:-
 This command will query the default container registry (usually Docker Hub) and return a list of container images with "nagios" in their name or description.
