@@ -9,6 +9,9 @@ Nagios is set up to monitor and track the health, performance, and availability 
 <u><h2 >Environment details </h2></u>
 **OS**- Ubuntu 20.04 64-bit</br>
 **CPU**- 8 Core (optional)</br>
+  -   For small to medium-sized setups monitoring a few dozen hosts and services, a single-core CPU should be sufficient.
+
+ -    Larger environments with hundreds or thousands of hosts and services may benefit from a multi-core CPU, such as a dual-core or quad-core processor.
 **Storage**- 1 TB (optional)</br>
 **Memory**-  409Mib </br>
  -    For a small to medium-sized setup monitoring a few dozen hosts and services, a minimum of 1 GB to 2 GB of RAM is often sufficient.
