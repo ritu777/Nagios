@@ -43,7 +43,7 @@ Then, use the command below to download and add the GPG key. This is needed to m
 ```
 curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key" | sudo apt-key add -
 ```
-After that update your system by this command.
+The sudo apt update command is used to refresh the package lists on your Ubuntu or Debian-based Linux system. This is important because it ensures that you have the latest information about the packages that are available for installation.
 ```
 sudo apt update
 ```
