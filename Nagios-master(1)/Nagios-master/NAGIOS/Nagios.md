@@ -59,6 +59,8 @@ sudo apt install -y podman
 **-y:** This is an option flag that stands for "yes." It's used to automatically answer "yes" to any prompts that may come up during the installation process.</br>        
 
 **podman:** This is the name of the software package you want to install.
+
+
 Here i am attaching the screenshots of above process.
 ![Alt text](SOURCE.png)
 ![Alt text](../../PODMAN.png)
