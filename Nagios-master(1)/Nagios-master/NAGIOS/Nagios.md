@@ -65,17 +65,22 @@ Here i am attaching the screenshots of above process.
 
 
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ source /etc/os-release
+
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
 [sudo] password for ritu: 
 deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /
+
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ sudo snap install curl
+
 curl 8.1.2 from Wouter van Bommel (woutervb) installed
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key" | sudo apt-key add -
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  1093  100  1093    0     0    940      0  0:00:01  0:00:01 --:--:--   940
 OK
+
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ sudo apt update
+
 Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease               
 Hit:2 http://in.archive.ubuntu.com/ubuntu focal InRelease                      
 Get:3 https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  InRelease [1,642 B]
