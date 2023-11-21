@@ -73,31 +73,53 @@ deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stab
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ sudo snap install curl
 
 curl 8.1.2 from Wouter van Bommel (woutervb) installed
+
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key" | sudo apt-key add -
+
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+  
                                  Dload  Upload   Total   Spent    Left  Speed
+                                 
 100  1093  100  1093    0     0    940      0  0:00:01  0:00:01 --:--:--   940
+
 OK
 
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ sudo apt update
 
-Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease               
-Hit:2 http://in.archive.ubuntu.com/ubuntu focal InRelease                      
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease  
+
+Hit:2 http://in.archive.ubuntu.com/ubuntu focal InRelease     
+
 Get:3 https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  InRelease [1,642 B]
+
 Get:4 http://in.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+
 Hit:5 http://in.archive.ubuntu.com/ubuntu focal-backports InRelease
+
 Get:6 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2,980 kB]
+
 Get:7 http://in.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [912 kB]
+
 Get:8 http://in.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [484 kB]
+
 Get:9 http://in.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2,511 kB]
+
 Get:10 http://in.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [351 kB]
+
 Get:11 http://in.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1,133 kB]
+
 Get:12 http://in.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [756 kB]
+
 Get:13 http://in.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [270 kB]
-Fetched 9,512 kB in 7s (1,334 kB/s)                                            
+
+Fetched 9,512 kB in 7s (1,334 kB/s)     
+
 Reading package lists... Done
-Building dependency tree       
+
+Building dependency tree   
+
 Reading state information... Done
+
 3 packages can be upgraded. Run 'apt list --upgradable' to see them.
 
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ sudo apt install -y podman
