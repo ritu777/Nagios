@@ -63,17 +63,19 @@ sudo apt install -y podman
 
 Here i am attaching the screenshots of above process.
 
-
+============================================================================================================================================================================================
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ source /etc/os-release
-
+============================================================================================================================================================================================
+============================================================================================================================================================================================
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
 [sudo] password for ritu: 
 deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /
+=============================================================================================================================================================================================
 
+=============================================================================================================================================================================================
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ sudo snap install curl
-
 curl 8.1.2 from Wouter van Bommel (woutervb) installed
-
+==============================================================================================================================================================================================
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key" | sudo apt-key add -
 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
