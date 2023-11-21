@@ -63,19 +63,19 @@ sudo apt install -y podman
 
 Here i am attaching the screenshots of above process.
 
-============================================================================================================================================================================================
+
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ source /etc/os-release
-============================================================================================================================================================================================
-============================================================================================================================================================================================
+
+
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
 [sudo] password for ritu: 
 deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /
-=============================================================================================================================================================================================
 
-=============================================================================================================================================================================================
+
+
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ sudo snap install curl
 curl 8.1.2 from Wouter van Bommel (woutervb) installed
-==============================================================================================================================================================================================
+
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key" | sudo apt-key add -
 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -125,37 +125,69 @@ Reading state information... Done
 3 packages can be upgraded. Run 'apt list --upgradable' to see them.
 
 ritu@ritu-Standard-PC-Q35-ICH9-2009:~$ sudo apt install -y podman
+
 Reading package lists... Done
-Building dependency tree       
+
+Building dependency tree  
+
 Reading state information... Done
+
 The following additional packages will be installed:
+
   catatonit conmon containernetworking-plugins containers-common criu crun
+  
   fuse-overlayfs libnet1 libnftables1 libprotobuf-c1 podman-machine-cni
+  
   podman-plugins slirp4netns uidmap
+  
 The following NEW packages will be installed:
+
   catatonit conmon containernetworking-plugins containers-common criu crun
+  
   fuse-overlayfs libnet1 libnftables1 libprotobuf-c1 podman podman-machine-cni
+  
   podman-plugins slirp4netns uidmap
+  
 0 upgraded, 15 newly installed, 0 to remove and 3 not upgraded.
+
 Need to get 31.0 MB of archives.
+
 After this operation, 153 MB of additional disk space will be used.
+
 Get:1 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libnet1 amd64 1.1.6+dfsg-3.1build1 [43.3 kB]
+
 Get:3 http://in.archive.ubuntu.com/ubuntu focal/universe amd64 libnftables1 amd64 0.9.3-2 [229 kB]
+
 Get:4 https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  conmon 100:2.1.2~0 [33.7 kB]
+
 Get:5 https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  containers-common 100:1-22 [52.4 kB]
+
 Get:7 http://in.archive.ubuntu.com/ubuntu focal-updates/universe amd64 libprotobuf-c1 amd64 1.3.3-1ubuntu0.1 [19.3 kB]
+
 Get:8 http://in.archive.ubuntu.com/ubuntu focal-updates/universe amd64 uidmap amd64 1:4.8.1-1ubuntu5.20.04.4 [26.4 kB]
+
 Get:10 https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  fuse-overlayfs 100:1.5.0-2 [41.8 kB]
+
 Get:2 https://mirror.aardsoft.fi/opensuse/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  catatonit 0.1.7-1 [275 kB]
+
 Get:6 https://mirror.aardsoft.fi/opensuse/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  criu 3.18-1 [703 kB]
+
 Get:9 https://mirror.aardsoft.fi/opensuse/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  crun 100:1.2-2 [252 kB]
+
 Get:11 https://mirror.aardsoft.fi/opensuse/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  podman-plugins 100:1.2.0-1 [1,116 kB]
+
 Get:12 https://mirror.aardsoft.fi/opensuse/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  podman-machine-cni 100:0.0.0-1 [1,821 kB]
+
 Get:13 https://mirror.aardsoft.fi/opensuse/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  podman 100:3.4.2-5 [18.7 MB]
+
 Get:14 https://mirror.aardsoft.fi/opensuse/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  slirp4netns 100:1.1.8-4 [708 kB]
+
 Get:15 https://mirror.aardsoft.fi/opensuse/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  containernetworking-plugins 100:1.1.1~1 [7,009 kB]
-Fetched 31.0 MB in 1min 27s (358 kB/s)                                         
+
+Fetched 31.0 MB in 1min 27s (358 kB/s)  
+
 Selecting previously unselected package catatonit.
+
 (Reading database ... 179273 files and directories currently installed.)
 Preparing to unpack .../00-catatonit_0.1.7-1_amd64.deb ...
 Unpacking catatonit (0.1.7-1) ...
